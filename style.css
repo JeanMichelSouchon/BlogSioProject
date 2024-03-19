@@ -53,3 +53,39 @@ nav  a:hover{ /* tous liens lors du survol dans la balise nav */
     background: #f43c80; /* couleur de fond */
 }
 
+.container{
+    display: flex;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 700px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* height: 70%; */
+    width: 70%;
+    border: 2px solid;
+    margin: 1px;
+}
+
+.side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* height: 70%; */
+    width: 30%;
+    border: 2px solid;
+    margin: 1px;
+}
