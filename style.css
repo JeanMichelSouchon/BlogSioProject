@@ -1,0 +1,24 @@
+header {
+    background-image: url("hmmm.jpg");
+   
+    color: rgb(12, 11, 11);
+	display: flex;
+	flex-wrap:wrap;
+    flex-direction: row;
+	justify-content: space-around;
+    background-color: white;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+
+ul {
+    margin-right: 20px;
+    display: flex;
+    list-style-type: none;
+}
+li{
+    cursor: pointer;
+    border-bottom: 1px solid rgb(2, 2, 2);
+    
+}
