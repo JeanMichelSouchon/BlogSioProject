@@ -28,10 +28,14 @@ body{
     
 }
 
-<<<<<<< HEAD
+.connect{
+    display: flex;
+    justify-content: space-between;
+}
+#se_connecter{
+    margin-left: 15px;
+}
 
-
-=======
 nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     float: left; /* effet flottant */
     text-decoration: none; /* pas d'héritage avec effet souligné */
@@ -43,8 +47,9 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     font-family: sans-serif; /* police d'écriture */
     font-size: 13px; /* taille du texte */
     transition: .5s; /* temps de transition lors du hover : une demi seconde */
-    }
-    nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+}
+
+nav  a:hover{ /* tous liens lors du survol dans la balise nav */
     background: #f43c80; /* couleur de fond */
-    }
->>>>>>> 46e1b114b36a08f665af3fbd66b0a58609e50e74
+}
+
