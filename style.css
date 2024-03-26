@@ -47,6 +47,7 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     font-family: sans-serif; /* police d'écriture */
     font-size: 13px; /* taille du texte */
     transition: .5s; /* temps de transition lors du hover : une demi seconde */
+    display: flex; justify-content: space-between; 
 }
 
 nav  a:hover{ /* tous liens lors du survol dans la balise nav */
@@ -59,7 +60,7 @@ nav  a:hover{ /* tous liens lors du survol dans la balise nav */
     border-radius: 5px;
     height: 700px;
     width: auto;
-    justify-content: space-between;
+    
 }
 
 .main{
