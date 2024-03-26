@@ -1,5 +1,5 @@
-header {
-    background-image: url("rouge.jpg");
+.header {
+    background-color: red;
     margin: 0px;
     padding: auto;
     color: rgb(12, 11, 11);
@@ -7,7 +7,6 @@ header {
 	flex-wrap:wrap;
     flex-direction: row;
 	justify-content: space-around;
-    background-color: white;
 	align-items: center;
 	position: sticky;
 	
@@ -36,11 +35,16 @@ body{
     margin-left: 15px;
 }
 
-nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+
+.nav { /* tous liens lors du survol dans la balise nav */
+    width: 100%;
+    border: 2px;
+}
+.nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     float: left; /* effet flottant */
     text-decoration: none; /* pas d'héritage avec effet souligné */
     color: #ffffff; /* couleur du texte */
-    background: #000000; /* couleur de fond */
+    background: red; /* couleur de fond */
     height: 36px; /* hauteur */
     line-height: 33px; /* interligne */
     padding: 0 10px; /* marges intérieur */
@@ -50,8 +54,8 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     display: flex; justify-content: space-between; 
 }
 
-nav  a:hover{ /* tous liens lors du survol dans la balise nav */
-    background: #f43c80; /* couleur de fond */
+.nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+    background: black; /* couleur de fond */
 }
 
 .container{
