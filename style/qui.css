@@ -1,0 +1,11 @@
+#info {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: var(--padding);
+}
+.border {
+  border-bottom: 1px solid black;
+}
+.border:first-child > h1 {
+  margin-top: 0;
+}

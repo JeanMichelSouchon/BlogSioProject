@@ -1,0 +1,101 @@
+/** bon cette partie j'ai un peu la flemme
+ * mais faudrait la ranger au bon endroit,
+ * p.ex. ce qui traite des articles dans un fichier dédié
+ * (articles.css) ou à défaut dans main.css
+ */
+ .article {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .article__title {
+    text-align: center;
+    font-weight: bold;
+  }
+  .article:not(.full-article) .article__content__short {
+    display: -webkit-box;
+    max-width: 350px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+  }
+  .article.full-article .article__title {
+    margin-bottom: var(--padding);
+    position: relative;
+  }
+  .article.full-article .article__title::after {
+    content: attr(data-author);
+    font-size: 12px;
+    margin-left: 12px;
+    color: var(--color-grey-light);
+    position: absolute;
+    bottom: -1.2rem;
+    left: calc(50% + 32px);
+  }
+  .article a {
+    text-align: right;
+    font-style: italic;
+  }
+  #content {
+    position: relative;
+  }
+  aside#articles {
+    position: relative;
+    max-height: 100%;
+    overflow-y: auto;
+    border-left: 2px solid var(--color-primary);
+    flex: 0 0 350px;
+  }
+  aside#articles > div:not(:first-child) {
+    border-top: 1px solid var(--color-primary);
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  footer {
+    height: 24px;
+    padding: 8px;
+    flex-shrink: 0;
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+  }
+  .container {
+    position: relative;
+    flex: 1 0 auto;
+  }
+  .main {
+    flex: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    aside#articles {
+      overflow-x: auto;
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: row;
+      flex: 0 0 200px;
+    }
+  
+    .article {
+      flex: 0 0 350px;
+    }
+  
+    .article:not(:first-child) {
+      border-top: none;
+      border-left: 1px solid var(--color-primary);
+    }
+  }

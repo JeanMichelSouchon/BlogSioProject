@@ -1,0 +1,16 @@
+/**
+ * ici ce sont des variables CSS que tu peux réutiliser avec :
+ * var(--ma-variable)
+ */
+html {
+  --color-primary: #141428;
+  --color-secondary: #28282d;
+  --color-grey-light: #c8c8c8;
+  --padding: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    --padding: 12px;
+  }
+}

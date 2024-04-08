@@ -1,0 +1,74 @@
+.header {
+  background-color: var(--color-primary);
+  margin: 0px;
+  padding: auto;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+}
+body {
+  margin: 0px;
+}
+.ok {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  display: flex;
+  list-style-type: none;
+}
+.bouton {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(2, 2, 2);
+}
+
+.connect {
+  display: flex;
+  justify-content: space-between;
+}
+#se_connecter {
+  margin-left: 15px;
+}
+
+.nav {
+  /* tous liens lors du survol dans la balise nav */
+  width: 100%;
+  border: 2px;
+}
+.nav a {
+  /* tous les liens a à l'intérieur de la balise nav */
+  float: left; /* effet flottant */
+  text-decoration: none; /* pas d'héritage avec effet souligné */
+  color: #ffffff; /* couleur du texte */
+  height: 36px; /* hauteur */
+  line-height: 33px; /* interligne */
+  padding: 0 10px; /* marges intérieur */
+  font-family: sans-serif; /* police d'écriture */
+  font-size: 13px; /* taille du texte */
+  transition: 0.5s; /* temps de transition lors du hover : une demi seconde */
+}
+
+.nav a:hover {
+  /* tous liens lors du survol dans la balise nav */
+  background: white; /* couleur de fond */
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  border-radius: 5px;
+  height: 700px;
+  width: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: var(--padding);
+  margin: 1px;
+}
