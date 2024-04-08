@@ -1,0 +1,9 @@
+.tout{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+}
+.genre{
+    display: flex;
+    flex-direction: column;
+}
