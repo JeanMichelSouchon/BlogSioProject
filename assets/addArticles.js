@@ -64,13 +64,13 @@ document.getElementById("articles").appendChild(articleNode)
 
 // easter egg hihi ^_^
 document.querySelector(".connect").addEventListener("click", () => {
-const bg = document.createElement("img")
-bg.src = "assets/bg.png"
-bg.style.width = "100%"
-bg.style.height = "100%"
-bg.style.position = "fixed"
-bg.style.top = "0"
-bg.style.left = "0"
+const asidesArticles = document.createElement("img")
+asidesArticles.src = "assets/bg.png"
+asidesArticles.style.width = "100%"
+asidesArticles.style.height = "100%"
+asidesArticles.style.position = "fixed"
+asidesArticles.style.top = "0"
+asidesArticles.style.left = "0"
 
 document.querySelector("body").appendChild(bg)
 setTimeout(() => {
