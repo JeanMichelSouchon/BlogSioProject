@@ -1,24 +1,96 @@
-header {
-    background-image: url("rouge.jpg");
-   
+.header {
+    background-color: red;
+    margin: 0px;
+    padding: auto;
     color: rgb(12, 11, 11);
 	display: flex;
 	flex-wrap:wrap;
     flex-direction: row;
 	justify-content: space-around;
-    background-color: white;
 	align-items: center;
 	position: sticky;
-	top: 0;
+	
 }
-
-ul {
+body{
+    margin : 0px;
+}
+.ok {
+    display: flex;
+    justify-content: space-between;
     margin-right: 20px;
     display: flex;
     list-style-type: none;
 }
-li{
+.bouton{
     cursor: pointer;
     border-bottom: 1px solid rgb(2, 2, 2);
     
+}
+
+.connect{
+    display: flex;
+    justify-content: space-between;
+}
+#se_connecter{
+    margin-left: 15px;
+}
+
+
+.nav { /* tous liens lors du survol dans la balise nav */
+    width: 100%;
+    border: 2px;
+}
+.nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+    float: left; /* effet flottant */
+    text-decoration: none; /* pas d'héritage avec effet souligné */
+    color: #ffffff; /* couleur du texte */
+    background: red; /* couleur de fond */
+    height: 36px; /* hauteur */
+    line-height: 33px; /* interligne */
+    padding: 0 10px; /* marges intérieur */
+    font-family: sans-serif; /* police d'écriture */
+    font-size: 13px; /* taille du texte */
+    transition: .5s; /* temps de transition lors du hover : une demi seconde */
+    
+}
+
+.nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+    background: black; /* couleur de fond */
+}
+
+.container{
+    display: flex;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 700px;
+    width: auto;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* height: 70%; */
+    width: 70%;
+    border: 2px solid;
+    margin: 1px;
+}
+
+.side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* height: 70%; */
+    width: 30%;
+    border: 2px solid;
+    margin: 1px;
 }
