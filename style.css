@@ -1,5 +1,5 @@
 .header {
-    background-color: red;
+    background-image: url("rouge.jpg");
     margin: 0px;
     padding: auto;
     color: rgb(12, 11, 11);
@@ -7,9 +7,9 @@
 	flex-wrap:wrap;
     flex-direction: row;
 	justify-content: space-around;
+    background-color: white;
 	align-items: center;
 	position: sticky;
-	
 }
 body{
     margin : 0px;
