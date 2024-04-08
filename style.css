@@ -36,8 +36,9 @@ body{
 
 
 .nav { /* tous liens lors du survol dans la balise nav */
-    width: 100%;
+    width: 1000px;
     border: 2px;
+    background-color: black;
 }
 .nav  a{ /* tous les liens a à l'intérieur de la balise nav */
     float: left; /* effet flottant */
