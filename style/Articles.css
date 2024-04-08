@@ -60,14 +60,7 @@
     flex-direction: column;
     height: 100%;
   }
-  footer {
-    height: 24px;
-    padding: 8px;
-    flex-shrink: 0;
-    background: var(--color-primary);
-    color: white;
-    text-align: center;
-  }
+
   .container {
     position: relative;
     flex: 1 0 auto;
