@@ -14,13 +14,33 @@ const articles = [
         "title": "Les Dangers de la Pollution Plastique dans les Océans",
         "content": "La pollution plastique constitue une menace croissante pour les écosystèmes marins. Chaque année, des millions de tonnes de plastique se retrouvent dans les océans, mettant en péril la vie marine et la santé des écosystèmes côtiers. Des efforts de sensibilisation et des mesures de réduction des déchets sont nécessaires pour lutter contre ce problème mondial.",
         "author": "Salim Aleykuum"
+    },
+    {
+        "title": "Euh, pardon ?",
+        "content": "Aujourd'hui, je rejoins ma copine en boîte. Elle prend la main du mec avec qui elle parlait et me présente comme 'Guillaume, mon ex.'",
+        "author": "vertetor"
+    },
+    {
+        "title": "Nope",
+        "content": "Aujourd'hui, mon fils est en pleine crise d'adolescence. Il répond 'Non' à tout ce qu'on lui dit, demande les choses en ronchonnant et ne nous dit plus 'Papa' et 'Maman', mais nous appelle par nos prénoms. Mon fils a deux ans.",
+        "author": "Madre"
+    },
+    {
+        "title": "Merci la Police!",
+        "content": "Aujourd'hui, une voiture de gendarmerie me double et me bloque immédiatement la route façon Starsky & Hutch. Les militaires me collent 4 points et 135€ pour avoir grillé un Stop situé plusieurs dizaines de kilomètres plus tôt. Stop par lequel je ne suis même pas passé. ",
+        "author": "CZB"
+    },
+    {
+        "title": "T'as une Touche!",
+        "content": "Aujourd'hui, en cours d'EPS, la fille que j'aime m'appelle par mon prénom puis me jette un ballon de basket. Je me le suis pris en pleine tête, et je suis tombé par terre. L'amour rend sourd, pas aveugle.",
+        "author": "Twee"
     }
   ]
 /**
 * ce bout de code ça va générer autant de blocs que ce que tu passes en `length` pour remplir tes articles
 * le "stockage" des articles est fait en haut du bloc <script>
 */
-const manyArticles = Array.from({ length: 3 }, () => articles[Math.floor(Math.random() * articles.length)]) /*change le numéro 3 part le nombre d'affichage d'articles voulu*/
+const manyArticles = Array.from({ length: 10 }, () => articles[Math.floor(Math.random() * articles.length)]) /*change le numéro 3 part le nombre d'affichage d'articles voulu*/
 for (const article of manyArticles) {
 const articleNode = addArticle(article)
 document.getElementById("articles").appendChild(articleNode)
