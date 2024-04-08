@@ -40,7 +40,7 @@ const articles = [
 * ce bout de code ça va générer autant de blocs que ce que tu passes en `length` pour remplir tes articles
 * le "stockage" des articles est fait en haut du bloc <script>
 */
-const manyArticles = Array.from({ length: 10 }, () => articles[Math.floor(Math.random() * articles.length)]) /*change le numéro 3 part le nombre d'affichage d'articles voulu*/
+const manyArticles = Array.from({ length: 7 }, () => articles[Math.floor(Math.random() * articles.length)]) /*change le numéro 3 part le nombre d'affichage d'articles voulu*/
 for (const article of manyArticles) {
 const articleNode = addArticle(article)
 document.getElementById("articles").appendChild(articleNode)
