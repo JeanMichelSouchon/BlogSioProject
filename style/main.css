@@ -73,8 +73,6 @@ body {
   margin: 1px;
 }
 footer {
-  height: 24px;
-  padding: 8px;
   flex-shrink: 0;
   background-color: black;
   color: white;
