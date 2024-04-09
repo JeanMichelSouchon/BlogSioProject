@@ -20,8 +20,8 @@
             <div>
                 <div class="connect">
                     <ul class="ok">
-                        <li ><button class="button" onclick="addArticle()">Ajout de post</button> </li><br>
-                        <li class="bouton" id="se_connecter">Se connecter / S'inscrire </li>
+                        <li ><button class="button" onclick="addArticle()"><a href="Ajout_de_post.html">Ajout de post</a></button> </li><br>
+                        <li class="bouton" id="se_connecter"><a href="connect.html">Se connecter / S'inscrire </a></li>
                     </ul>
                 
                     <img src="assets/compte.png" alt="" width="70px" height="70px">
@@ -72,21 +72,24 @@
         <aside id="articles">
         </aside>
     </div>
-    <footer>
-        <h1>Les liens utiles ! </h1>
-           <ol>
-                 <ul>F.A.Q </ul>
-                 <ul>Mentions légales </ul>
-                 <ul>Condition générales </ul>
-                 <ul>Nous contacter </ul>
-           </ol>
-        <h2> Langues </h2>
-             <ol>
-                <ul> Français </ul>
-                <ul> Anglais ( En vrai non. )</ul>
-             </ol>
-        <p> Revenir en haut</p>
-        </footer>
+    <div class="footer">
+        <div class="footleft">
+            <h1>Les liens utiles ! </h1>
+                <ol>
+                    <ul>F.A.Q </ul>
+                    <ul>Mentions légales </ul>
+                    <ul>Condition générales </ul>
+                    <ul>Nous contacter </ul>
+                </ol>
+        </div>
+        <div class="footright">
+            <h2> Langues </h2>
+                <ol>
+                    <ul> Français </ul>
+                    <ul> Anglais ( En vrai non. )</ul>
+                </ol>
+                <a class="up" href="#top">    Retour en haut ↑</a>
+        </div>
     <script src="assets/addArticles.js"></script> 
     <script src="assets/AfficheArticles.js"></script> 
     <script src="ajout_post.js"></script> 
