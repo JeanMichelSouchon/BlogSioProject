@@ -82,7 +82,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.footleft{
-
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
