@@ -72,8 +72,30 @@ body {
   padding: var(--padding);
   margin: 1px;
 }
-footer {
-  background-color: var(--color-primary);
+.footer {
+  background-color: black;
   color: white;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.form{
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 650px;
+  background-color: rgb(137, 121, 121);
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
