@@ -42,23 +42,27 @@
                 <h3>Vous voulez la partager avec les autres utilisateurs de VDM ?
                     Vous avez bien raison car ça fait du bien d’en rire. Suivez les indications ci-dessous, et si votre anecdote passe le cap fatidique de la modération, elle sera publiée dans les prochaines 24 h.
                 </h3>    
-                <form action=""></form>
+                <form action="">
                 <div class="tout">
                     <div>
-                        <label for="nom">Nom</label>
+                        <label for="nom" id="nom">Nom</label>
                         <input type="text" placeholder="Nom"> 
                     </div>
                     <div>
                         <div>
                             <label for="genre">Genre</label>
                             <div class="genre">
-                            Homme <input type="radio"> 
-                            Femme <input type="radio"> 
-                            Autre <input type="text" name="genre">
+                            Homme <input type="radio" id="1" name='genre1'> 
+                            Femme <input type="radio" id="1" name='genre1'> 
+                            Autre <input type="text" name="genre1">
                         </div>
                         </div>
                     </div>
-                </div>
+                </div><br>
+                <label for="post">Post</label>
+                <textarea name="post" id="post" cols="30" rows="10"></textarea>
+                <input type="button" onclick="ajouterElement()">envoyer
+            </form>
             
             
             
@@ -85,5 +89,6 @@
         </footer>
     <script src="assets/addArticles.js"></script> 
     <script src="assets/AfficheArticles.js"></script> 
+    <script src="ajout_post.js"></script> 
     </body>
 </html>
