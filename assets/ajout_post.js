@@ -39,4 +39,5 @@ function ajouterElement() {
         alert("Désolé, votre navigateur ne supporte pas le stockage local.");
 
     }
+    
 }
