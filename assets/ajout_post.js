@@ -13,31 +13,22 @@ if (typeof(Storage) !== "undefined") {
     // Code pour le stockage local non disponible
     alert("Désolé, votre navigateur ne supporte pas le stockage local.");
 }
+const inputElement = document.getElementById("post");
+const inputNom = document.getElementById("nom");
+function ajouter(){                                         //j'ai pas reussi a faire marcher autrement sans faire de fonction ajouter
+    insertElement(inputElement, "Post")                    //fin j'ai reussi mais apres le code etait trop grand, ct pour le reduire
+    insertElement(inputNom, "Nom")                         //la on a juste a definir les variables qui récupere avec les id, et a appeler la fonction avec son nom
+}
 
-
-function ajouterElement() {
-    const inputElement = document.getElementById("post");
-    const nouvelElement = inputElement.value;
-    const inputNom = document.getElementById("nom");
-    const nouvelNom = inputNom.value;
-    if (nouvelElement.trim() !== "") {
-        const todolist = JSON.parse(localStorage.getItem("Post"));
-        todolist.push(nouvelElement);
-        localStorage.setItem("Post", JSON.stringify(todolist));
+function insertElement(element, inputId) {
+    const nouvelElement = element.value;            //récupère la valeur de l'élément et le nom de la ou il doit le stocker
+    if (nouvelElement.trim() !== "") {              //si l'élément n'est pas vide.     trim() = enlever les espaces en debut et fin de l'element
+        const todolist = JSON.parse(localStorage.getItem(inputId));     //transforme l'element en objet ?
+        todolist.push(nouvelElement);                                   //push l'element dans le local storage
+        localStorage.setItem(inputId, JSON.stringify(todolist));        //transforme l'element un string
         //afficherTodolist();
         // Réinitialise le champ de saisie
-        inputElement.value = "";
-    }
-    if (nouvelNom.trim() !== "") {
-        const todolistnom = JSON.parse(localStorage.getItem("Nom"));
-        todolistnom.push(nouvelNom);
-        localStorage.setItem("Nom", JSON.stringify(todolistnom));
-        //afficherTodolist();
-        // Réinitialise le champ de saisie
-        inputNom.value = "";
-    } else {
-        alert("Désolé, votre navigateur ne supporte pas le stockage local.");
-
+        element.value = "";                                             //remet le champs vide
     }
     
 }
