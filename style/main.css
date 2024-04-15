@@ -110,13 +110,12 @@ body {
   margin-top: 10px;
 }
 
-#resultsContainer {
+#content {
   background-color: var(--color-primary);
     color: white;
-    margin: 1px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    cursor: pointer;
+    height: 100%;
+    /* margin: 1px;
+    padding: 8px; */
+    /* gap: 8px;
+    cursor: pointer; */
 }
