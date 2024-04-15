@@ -61,9 +61,9 @@ function logout() {
     window.location.href = 'index.html';
 }
 
-window.onload = function() {
-    var isLoggedIn = localStorage.getItem('loggedIn');
-    if (isLoggedIn === 'true') {
+window.onload = function() { // au chargement de la page il vérifie si quelqu'un est connecté ou non
+    var isLoggedIn = localStorage.getItem('loggedIn');// récupère la variable stocker dans le LocalStorage 
+    if (isLoggedIn === 'true') { // si elle existe alors
         // Si l'utilisateur est connecté, récupérez son nom d'utilisateur
         var username = localStorage.getItem('username');
         

@@ -11,6 +11,9 @@
     width: 1000px;
     height: 100px;
 }
+.post{
+    padding: left;
+}
 .footer {
     background-color: var(--color-primary);
     color: white;
