@@ -99,3 +99,22 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+#keywordInput {
+  margin-right: 10px;
+}
+
+#resultsContainer {
+  margin-top: 10px;
+}
+
+#resultsContainer {
+  background-color: var(--color-primary);
+    color: white;
+    margin: 1px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
