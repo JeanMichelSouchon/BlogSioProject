@@ -52,3 +52,27 @@ function login() {
     // Empêche le formulaire de se soumettre normalement
     return false;
 }
+function logout() {
+    // Suppression des informations de connexion du localStorage
+    localStorage.removeItem('loggedIn');
+    localStorage.removeItem('username');
+
+    // Redirection vers la page de connexion
+    window.location.href = 'index.html';
+}
+
+window.onload = function() {
+    var isLoggedIn = localStorage.getItem('loggedIn');
+    if (isLoggedIn === 'true') {
+        var username = localStorage.getItem('username');
+        // Création d'un élément pour afficher le nom d'utilisateur
+        var userElement = document.createElement('span');
+        userElement.textContent = 'Connecté en tant que :' + username;
+        document.getElementById('connect').appendChild(userElement);
+        // Création d'un élément pour afficher le nom d'utilisateur
+        var userlogout = document.createElement('button');
+        userlogout.onclick = logout();
+        userlogout.textContent = 'déconnexion';
+        document.getElementById('connect').appendChild(userlogout);
+    }
+}
