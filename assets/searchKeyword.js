@@ -14,7 +14,7 @@ function searchKeyword() {
 }
 
 function displayResults(results) {
-    var resultsContainer = document.getElementById("resultsContainer");
+    var resultsContainer = document.getElementById("content");
     resultsContainer.innerHTML = "";
 
     if (results.length === 0) {
