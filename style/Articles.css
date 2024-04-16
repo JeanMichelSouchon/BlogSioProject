@@ -28,6 +28,11 @@
   .article.full-article .article__title {
     margin-bottom: var(--padding);
     position: relative;
+    
+  }
+  .article.full-article {
+    background-color: blue;
+    
   }
   .article.full-article .article__title::after {
     content: attr(data-author);
