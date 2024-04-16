@@ -86,9 +86,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom: 0;
+  justify-content: center;ß
   width: 100%;
 }
 .form{
