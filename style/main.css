@@ -109,6 +109,7 @@ body {
 
 #resultsContainer {
   margin-top: 10px;
+  background-color: red;
 }
 
 #content {
