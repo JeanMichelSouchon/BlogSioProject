@@ -47,13 +47,4 @@ const articleNode = addArticle(article)
 document.getElementById("articles").appendChild(articleNode)
 }
 
-document.querySelector(".connect").addEventListener("click", () => {
-const asidesArticles = document.createElement("img")
-asidesArticles.src = "assets/bg.png"
-asidesArticles.style.width = "100%"
-asidesArticles.style.height = "100%"
-asidesArticles.style.position = "fixed"
-asidesArticles.style.top = "0"
-asidesArticles.style.left = "0"
-})
 
