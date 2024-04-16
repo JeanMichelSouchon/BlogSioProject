@@ -55,9 +55,5 @@ asidesArticles.style.height = "100%"
 asidesArticles.style.position = "fixed"
 asidesArticles.style.top = "0"
 asidesArticles.style.left = "0"
-
-document.querySelector("body").appendChild(bg)
-setTimeout(() => {
-  document.querySelector("body").removeChild(bg)
-}, 80)
 })
+
