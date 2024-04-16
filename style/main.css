@@ -61,7 +61,6 @@ body {
 }
 
 .container {
-  background-color: var(--color-primary);
   color: white;
   text-align: center;
   display: flex;
@@ -116,5 +115,5 @@ body {
 #content {
   background-color: var(--color-primary);
     color: white;
-    height: 100%;
+    height: auto;
 }
