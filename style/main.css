@@ -13,21 +13,23 @@
 body {
   margin: 0px;
 }
-.ok {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-  display: flex;
-  list-style-type: none;
-}
+
 .bouton {
   cursor: pointer;
   border-bottom: 1px solid rgb(2, 2, 2);
 }
 
+
 .connect {
   display: flex;
   justify-content: space-between;
+  margin-right: 20px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+#coright{
+  margin: 5px; 
 }
 #se_connecter {
   margin-left: 15px;
@@ -59,6 +61,8 @@ body {
 }
 
 .container {
+  color: white;
+  text-align: center;
   display: flex;
   border-radius: 5px;
   height: 700px;
@@ -71,6 +75,7 @@ body {
   justify-content: space-around;
   padding: var(--padding);
   margin: 1px;
+  height: 650px;
 }
 .footer {
   background-color: var(--color-primary);
@@ -82,8 +87,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 .form{
@@ -98,4 +101,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#keywordInput {
+  margin-right: 10px;
+}
+
+#resultsContainer {
+  margin-top: 10px;
+}
+
+#content {
+  background-color: var(--color-primary);
+    color: white;
+    height: auto;
 }
