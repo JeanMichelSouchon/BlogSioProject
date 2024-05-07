@@ -14,3 +14,8 @@
 .post{
     padding: left;
 }
+#div {
+    background-color: var(--color-primary);
+      color: white;
+      height: auto;
+  }
