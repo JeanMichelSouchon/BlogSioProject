@@ -28,6 +28,11 @@
   .article.full-article .article__title {
     margin-bottom: var(--padding);
     position: relative;
+    
+  }
+  .article.full-article {
+    background-color: blue;
+    
   }
   .article.full-article .article__title::after {
     content: attr(data-author);
@@ -94,18 +99,4 @@
       border-top: none;
       border-left: 1px solid var(--color-primary);
     }
-  }
-  .footer {
-    background-color: var(--color-primary);
-    color: white;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
   }

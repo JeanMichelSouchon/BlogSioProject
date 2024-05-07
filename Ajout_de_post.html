@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style/Articles.css"/>
         <link rel="stylesheet" type="text/css" href="style/ajout.css"/>
 
-        <title> BLOG VDM</title>
+        <title>Vie De Maestris</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
     </head>
@@ -29,7 +29,7 @@
             </div>
             <div class="nav">
                 <a href="index.html">All</a>
-                <a href="">Aléatoire</a>
+                <a href="" class="Aléatoire">Aléatoire</a>
                 <a href="qui-somme-nous.html">Qui sommes-nous ?</a>
                 <a href="">Recherche</a>
             </div>
@@ -42,20 +42,23 @@
                 <h3>Vous voulez la partager avec les autres utilisateurs de VDM ?
                     Vous avez bien raison car ça fait du bien d’en rire. Suivez les indications ci-dessous, et si votre anecdote passe le cap fatidique de la modération, elle sera publiée dans les prochaines 24 h.
                 </h3>    
-                <form action="">
+                <form action=""></form>
                 <div class="tout">
                     <div>
                         <label for="nom">Nom</label>
-                        <input type="text" id="nom" placeholder="Nom"> 
+                        <input type="text" placeholder="Nom"> 
                     </div>
-                    
-                    <label for="post" class="post">Post</label>
-                    <textarea name="post" id="post" cols="30" rows="10"></textarea>
-                    <button onclick="ajouter()">envoyer</button>
-                    
+                    <div>
+                        <div>
+                            <label for="genre">Genre</label>
+                            <div class="genre">
+                            Homme <input type="radio"> 
+                            Femme <input type="radio"> 
+                            Autre <input type="text" name="genre">
+                        </div>
+                        </div>
                     </div>
-                </div><br>
-            </form>
+                </div>
             
             
             
@@ -65,26 +68,22 @@
         <aside id="articles">
         </aside>
     </div>
-    <div class="footer">
-        <div class="footleft">
-            <h1>Les liens utiles ! </h1>
-                <ol>
-                    <ul>F.A.Q </ul>
-                    <ul>Mentions légales </ul>
-                    <ul>Condition générales </ul>
-                    <ul>Nous contacter </ul>
-                </ol>
-        </div>
-        <div class="footright">
-            <h2> Langues </h2>
-                <ol>
-                    <ul> Français </ul>
-                    <ul> Anglais ( En vrai non. )</ul>
-                </ol>
-                <a class="up" href="#top">    Retour en haut ↑</a>
-        </div>
+    <footer>
+        <h1>Les liens utiles ! </h1>
+           <ol>
+                 <ul>F.A.Q </ul>
+                 <ul>Mentions légales </ul>
+                 <ul>Condition générales </ul>
+                 <ul>Nous contacter </ul>
+           </ol>
+        <h2> Langues </h2>
+             <ol>
+                <ul> Français </ul>
+                <ul> Anglais ( En vrai non. )</ul>
+             </ol>
+        <p> Revenir en haut</p>
+        </footer>
     <script src="assets/addArticles.js"></script> 
     <script src="assets/AfficheArticles.js"></script> 
-    <script src="assets/ajout_post.js"></script> 
     </body>
 </html>
