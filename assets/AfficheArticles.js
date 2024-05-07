@@ -44,6 +44,7 @@ const articles = [
 const manyArticles = Array.from({ length: 7 }, () => articles[Math.floor(Math.random() * articles.length)]) /*change le numéro de lenght part le nombre d'affichage d'articles voulu*/
 for (const article of manyArticles) {
 const articleNode = addArticle(article)
-document.getElementById("content").appendChild(articleNode)
+document.getElementById("main").appendChild(articleNode)
 }
+
 
