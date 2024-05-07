@@ -22,7 +22,6 @@ function displayResults(results) {
     } else {
         for (var i = 0; i < results.length; i++) {
             var resultElement = document.createElement("div");
-            resultElement.id = "resultsContainer";
             resultElement.innerHTML = "<h2>" + results[i].title + "</h2><p>" + results[i].content + "</p>";
             resultsContainer.appendChild(resultElement);
         }
