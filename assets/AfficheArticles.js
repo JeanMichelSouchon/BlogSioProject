@@ -47,3 +47,4 @@ const articleNode = addArticle(article)
 document.getElementById("content").appendChild(articleNode)
 }
 
+
