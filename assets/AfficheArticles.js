@@ -47,9 +47,3 @@ const articleNode = addArticle(article)
 document.getElementById("content").appendChild(articleNode)
 }
 
-
-// document.querySelector("body").appendChild(bg)
-// setTimeout(() => {
-//   document.querySelector("body").removeChild(bg)
-// }, 80)
-// });
