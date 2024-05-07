@@ -18,28 +18,31 @@
 
             <div>
                 <div class="connect">
-                    <ul class="ok">
-                        <li ><button class="button" onclick="addArticle()"><a href="Ajout_de_post.html">Ajout de post</a></button> </li><br>
-                        <li class="bouton" id="se_connecter"><a href="connect.html">Se connecter / S'inscrire </a></li>
-                    </ul>
+                    <div id="coleft"><button class="button" onclick="addArticle()"><a href="Ajout_de_post.html">Ajout de post</a></button></div>
+                    <div id="coright"><span id="log"><a href="connect.html" id="se_connecter">Se connecter / S'inscrire </a></span></div>
                 
-                    <img src="assets/compte.png" alt="" width="70px" height="70px">
+                    <div><img src="assets/compte.png" alt="" width="70px" height="70px"></div>
                 </div>
             </div>
             <div class="nav">
                 <a href="index.html">All</a>
                 <a class="Aléatoire">Aléatoire</a>
                 <a href="qui-somme-nous.html">Qui sommes-nous ?</a>
-                <a href="">Recherche</a>
+                <input type="text" id="keywordInput" placeholder="Rechercher un mot-clé...">
+                 <button onclick="searchKeyword()">Rechercher</button>
+                 
             </div>
         </div>
    
     <div class="container">
-        <div class="main"> 
+        
+        <div id="main"> 
             <div id="content">
-
+                <!-- <div id="resultsContainer"></div> -->
             </div>
         </div>
+        
+
         <aside id="articles">    
         </aside>
     </div>
@@ -48,9 +51,9 @@
             <h1>Les liens utiles ! </h1>
                 <ol>
                     <ul>F.A.Q </ul>
-                    <ul>Mentions légales </ul>
+                    <!-- <ul>Mentions légales </ul>
                     <ul>Condition générales </ul>
-                    <ul>Nous contacter </ul>
+                    <ul>Nous contacter </ul> -->
                 </ol>
         </div>
         <div class="footright">

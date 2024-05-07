@@ -61,18 +61,15 @@ function logout() {
     window.location.href = 'index.html';
 }
 
-window.onload = function() {
-    var isLoggedIn = localStorage.getItem('loggedIn');
-    if (isLoggedIn === 'true') {
+window.onload = function() { // au chargement de la page il vérifie si quelqu'un est connecté ou non
+    var isLoggedIn = localStorage.getItem('loggedIn');// récupère la variable stocker dans le LocalStorage 
+    if (isLoggedIn === 'true') { // si elle existe alors
+        // Si l'utilisateur est connecté, récupérez son nom d'utilisateur
         var username = localStorage.getItem('username');
-        // Création d'un élément pour afficher le nom d'utilisateur
-        var userElement = document.createElement('span');
-        userElement.textContent = 'Connecté en tant que :' + username;
-        document.getElementById('connect').appendChild(userElement);
-        // Création d'un élément pour afficher le nom d'utilisateur
-        var userlogout = document.createElement('button');
-        userlogout.onclick = logout();
-        userlogout.textContent = 'déconnexion';
-        document.getElementById('connect').appendChild(userlogout);
+        
+        // Mettez à jour le contenu de la balise coright
+        var coright = document.getElementById('coright');
+        coright.innerHTML = 'Connecté en tant que ' + username + ' <button onclick="logout()">Se déconnecter</button>';
+
     }
 }
