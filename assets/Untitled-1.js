@@ -40,7 +40,7 @@ const articles = [
 * ce bout de code ça va générer autant de blocs que ce que tu passes en `length` pour remplir tes articles
 * le "stockage" des articles est fait en haut du bloc <script>
 */
-const manyArticles = Array.from({ length: 5 }, () => articles[Math.floor(Math.random() * articles.length)]) /*change le numéro 3 part le nombre d'affichage d'articles voulu*/
+const manyArticles = Array.from({ length: 5 }, () => articles[Math.floor(Math.random()  )]) /*change le numéro 3 part le nombre d'affichage d'articles voulu*/
 for (const article of manyArticles) {
 const articleNode = addArticle(article)
 document.getElementById("articles").appendChild(articleNode)
@@ -59,4 +59,20 @@ document.querySelector("body").appendChild(bg)
 setTimeout(() => {
   document.querySelector("body").removeChild(bg)
 }, 80)
-});
+})
+
+articles[Math.floor(Math.random()
+    document.querySelector(".Aléatoire").addEventListener("click", () => {
+        const asidesArticles = document.createElement("img")
+        asidesArticles.src = "assets/bg.png"
+        asidesArticles.style.width = "100%"
+        asidesArticles.style.height = "100%"
+        asidesArticles.style.position = "fixed"
+        asidesArticles.style.top = "0"
+        asidesArticles.style.left = "0"
+        
+        document.querySelector("body").appendChild(bg)
+        setTimeout(() => {
+          document.querySelector("body").removeChild(bg)
+        }, 80)
+        })
