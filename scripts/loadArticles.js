@@ -66,6 +66,7 @@ function getStoredArticles() {
 
 
 function displayArticle(json, isHighlight = false) {
+  
   //crée les éléments des articles
   const article = document.createElement("div");
   article.classList.add("article");
