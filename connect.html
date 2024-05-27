@@ -1,65 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style/main.css"/>
-    <link rel="stylesheet" type="text/css" href="style/qui.css"/>
-    <link rel="stylesheet" type="text/css" href="style/variables.css"/>
-    <title> BLOG VDM</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-</head>
-<body>
-    <div class="header">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/connect.css" />
+    <link rel="stylesheet" type="text/css" href="style/variables.css" />
+    <title>BLOG VDM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <script src="scripts/site/insertHeaderTop.js"></script>
+      <script src="scripts/site/insertNav.js"></script>
+    </header>
 
-        <div class="profile">
-            <h1>VDM</h1>
-        </div>
-
+    <main>
+      <div class="form">
         <div>
-            
-        </div>
-
-        <div class="nav">
-            <a href="index.html">All</a>
-            <a href="">Aléatoire</a>
-            <a href="qui-somme-nous.html">Qui sommes nous ?</a>
-            <a href="">Recherche</a>
-        </div>
-    </div>
-    <div class="form">
-        <div>
-            <h1>Connexion</h1>
+          <h1>Connexion</h1>
         </div>
         <div>
-            <form onsubmit="return login()">
-                <label for="username">Nom d'utilisateur:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Mot de passe:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                <input type="submit" value="Se connecter">
-            </form>
+          <form onsubmit="return login()">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required />
+            <br /><br />
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required />
+            <br /><br />
+            <input type="submit" value="Se connecter" />
+          </form>
         </div>
-    
-    </div>  
-    <div class="footer">
-        <div class="footleft">
-            <h1>Les liens utiles ! </h1>
-                <ol>
-                    <ul>F.A.Q </ul>
-                    <ul>Mentions légales </ul>
-                    <ul>Condition générales </ul>
-                    <ul>Nous contacter </ul>
-                </ol>
-        </div>
-        <div class="footright">
-            <h2> Langues </h2>
-                <ol>
-                    <ul> Français </ul>
-                    <ul> Anglais ( En vrai non. )</ul>
-                </ol>
-                <a class="up" href="#top">    Retour en haut ↑</a>
-        </div>
-    </div>
-    <script src="assets/connect.js"></script> 
-</body>
+      </div>
+    </main>
+
+    <footer>
+      <script src="scripts/site/insertFooter.js"></script>
+    </footer>
+
+    <script src="scripts/sessionHandler.js"></script>
+  </body>
 </html>
+

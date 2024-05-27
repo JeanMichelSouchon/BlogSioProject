@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/variables.css" />
+    <title>BLOG VDM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <script src="scripts/site/insertHeaderTop.js"></script>
+      <script src="scripts/site/insertNav.js"></script>
+    </header>
+
+    <main>
+      <div id="content-wrapper">
+        <div class="main-add">
+          <h1>Vous venez de vivre une VDM ?</h1>
+          <h3>
+            Vous voulez la partager avec les autres utilisateurs de VDM ? Vous
+            avez bien raison car ça fait du bien d'en rire. Suivez les
+            indications ci-dessous, et si votre anecdote passe le cap fatidique
+            de la modération, elle sera publiée dans les prochaines 24 h.
+          </h3>
+
+          <form id="vdm-form">
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" placeholder="Nom" />
+
+            <label for="nom">Titre</label>
+            <input id="titre" type="text" placeholder="Titre" />
+
+            <label for="message">Ta VDM</label>
+            <textarea
+              id="vdm"
+              rows="5"
+              placeholder="L'autre jour avec ma soeur..."
+            ></textarea>
+
+            <input type="submit" value="Enregistrer" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <script src="scripts/site/insertFooter.js"></script>
+    </footer>
+
+    <script src="scripts/sessionHandler.js"></script>
+    <script src="scripts/addArticles.js"></script>
+    
+  </body>
+</html>
