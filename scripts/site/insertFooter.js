@@ -10,7 +10,7 @@ const footerHtml = `
       Conditions générales
     </li>
     <li>
-      <a href="mailto:viedemastris@gmail.com">Nous contacter </a>
+      <a href="mailto:viedemaestris@gmail.com">Nous contacter </a>
     </li>
   </ul>
 `;
